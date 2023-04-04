@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes move{
+    0%{
+        top: 120px;
+        left: 400px;
+    }
+    50%{
+        top: 140px;
+        left: 400px;
+    }
+    100%{
+        top: 120px;
+        left: 400px; 
+    }
+}
+
+@keyframes movetwo {
+    0%{
+        top: 340px;
+        left: -208px;
+    }
+    50%{
+        top: 370px;
+        left: -188px;
+    }
+    100%{
+        top: 340px;
+        left: -208px; 
+    }
+}
+
+@keyframes movethree {
+    0%{
+        top: 10%;
+        left: 57%;
+    }
+    50%{
+        top: 10%;
+        left: 59%;
+    }
+    100%{
+        top: 10%;
+        left: 57%;
+    }
+}
+
+@keyframes movefour {
+    0%{
+        left: 50%;
+    }
+    50%{
+        left: 47%;
+    }
+    100%{ 
+        left: 50%;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #3A4F5A;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+header img{
+    width: 200px;
+}
+
+header nav{
+    display: flex;
+    gap: 100px;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #3A4F5A;
+}
+
+header div{
+    display: flex;
+    gap: 20px;
+}
+
+header div img {
+    width: 40px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
+
+.circulo-menor{
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    z-index: -1;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.texto{
+    margin: 200px 100px;
+}
+
+.texto span{
+    color: #43B1EB;
+}
+
+.texto h2{
+    font-size: 300%;
+    font-weight: 400;
+}
+
+.texto h1{
+   font-size: 500%;
+}
+
+.circulo-maior{
+    position: absolute;
+    width: 600px;
+    height: 550px;
+    top: 340px;
+    left: -208px;
+    z-index: -1;
+    animation-name: movetwo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.botao{
+    background-color: #3A4F5A;
+    width: 200px;
+    height: 20%;
+    display: inline-block;
+    gap: 20px;
+    text-align: center;
+    padding: 12px;
+    margin: 20px 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.20);
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+
+.email {
+    position: absolute;
+    bottom: 20px;
+    font-size: 22px;
+    left: 15%;
+}
+
+.pintura{
+    position: absolute;
+    top: 10%;
+    left: 57%;
+    width: 730px;
+    z-index: -1;
+    animation-name: movethree;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;    
+}
+
+.pessoa{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 900px;
+}
